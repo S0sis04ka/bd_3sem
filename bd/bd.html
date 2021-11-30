@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="bd.js"></script>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	Бюджет: <input type="number" id="budget_container" value="100000">  <br>
+	Затраты / день: <span id="expenses_span"> </span> <br> 
+
+	Дата:
+	<input type="date" id="date" value="">
+	<br>
+	<input type="button" value="ОТЧЕТ" id="prediction_button">
+
+<!--
+	<h4>Добавить продукт:</h4> 
+	 название: <input type="text" size="10" id="add_product_name"> цена/шт. : <input type="number" size="5" id="add_product_cost">
+	<input type="button" id="add_product_button" value="Добавить">
+
+	<h4>Добавить животное в магазин:</h4> 
+	 название: <input type="text" size="10" id="add_zoo_name"> цена: <input type="number" size="5" id="add_zoo_cost">
+	
+	<table border="1" id="add_animal_diet">
+		<caption>рацион</caption>
+		<tr>
+			<td>Продукт</td>
+			<td>Кол-во</td>
+			<td>Выбрать</td>
+		</tr>
+	</table>
+
+	<input type="button" id="add_zoo_button" value="Добавить"> 
+-->
+
+	<br>
+	<br>
+
+	<table border="1" id="table_zoo" style="float: left; margin-right: 20px;">
+		<caption> Зоопарк </caption>
+		<tr>
+			<td> id </td>
+			<td> Животное </td>
+			<td> Цена </td>
+			<td> Кол-во </td>
+		</tr>
+	</table>
+
+	<table border="1" id="table_diet" style="float: left; margin-right: 20px;">
+		<caption> Рацион </caption>
+		<tr>
+			<td> id </td>
+			<td> key </td>
+			<td> шт. </td>
+			<td> цена </td>
+		</tr>
+	</table>
+
+	<table border="1" id="table_products" style="float: left; margin-right: 20px;">
+		<caption> Продукты </caption>
+		<tr>
+			<td> key </td>
+			<td> продукт </td>
+			<td> цена шт. </td>
+		</tr>
+	</table>
+
+	<table border="1" id="table_market">
+		<caption> Магазин животных </caption>
+		<tr>
+			<td> id </td>
+			<td> Животное </td>
+			<td> цена </td>
+		</tr>
+	</table>
+
+</body>
+</html>
